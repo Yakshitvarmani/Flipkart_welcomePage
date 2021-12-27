@@ -1,0 +1,386 @@
+/* @import url("https://pro.fontawesome.com/releases/v5.10.0/css/all.css"); */
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap'); */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #efefef;
+    font-family: Roboto,Arial,sans-serif;;
+}
+#headerBlock{
+    background-color: #2874f0;
+    height: 56px;
+    width: 100%;
+    display: flex;
+}
+#headerBlock article{
+    width: 80%;
+    justify-content: center;
+    margin: 0 auto;
+    height: 56px;
+    align-items: center;
+    display: flex;
+}
+.leftBlock{
+    justify-content: flex-start;
+    display: flex;
+    flex-basis: 60%;
+
+}
+.rightBlock{
+    justify-content: flex-end;
+    display: flex;
+    flex-basis: 40%;
+}
+.logoBlock a{
+    text-decoration: none;
+}
+.logo{
+    width: 75px;
+}
+.explore{
+    margin-top: -4px;
+    font-style: italic;
+    font-size: 13px;
+    margin-left: -3px;
+}
+.explore :nth-child(1){
+color: #fff;
+
+}
+.explore :nth-child(2){
+    color: #ffe500;
+    font-weight: bold;
+}
+.explore img{
+    width: 9px;
+    position: relative;
+    top: -1px;
+    left: -2px;
+}
+.searchBlock input{
+    flex-basis: 100%;
+    height: 36px;
+    padding:0px 10px;
+}
+.searchBlock{
+    display: flex;
+    flex-basis: 85%;
+}
+.logoBlock{
+    display: flex;
+    flex-basis: 15%;
+}
+.searchIcon{
+    position: relative;
+}
+.searchIcon i{
+    position: absolute;
+    top: 10px;
+    left: -25px;
+    color: #2874f0;
+}
+
+.rightBlock >ul {
+list-style: none;
+display: flex;
+}
+.rightBlock>ul>li{
+    justify-content: center;
+    padding: 0 30px;
+    align-items: center;
+    display: flex;
+}
+
+.rightBlock ul >#login>a{
+   background-color: #fff;
+    padding: 5px 40px;
+    color:#2874f0;
+}
+.rightBlock ul>li > a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+}
+.rightBlock ul>#login >a{
+    color: #2874f0;
+}
+.rightBlock #login .dropdown{
+    background-color: #fff;
+    width: 250px;
+    /* padding: 10px; */
+    display: none;
+    position: absolute;
+    top: 56px;
+    list-style: none;
+    
+}
+.rightBlock #login:hover .dropdown{
+    display: block;
+    z-index: 1;
+}
+.triangleblock{
+    display: flex;
+    justify-content: center;
+}
+.triangle{
+    border-bottom: 10px solid #fff;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: -10px;
+}
+.rightBlock #login .dropdown>li>a{
+    color: #111;
+    margin: 10px;
+    font-size: small;
+}
+.rightBlock #login .dropdown>li{
+   padding: 10px 0;
+    border-bottom: solid #efefef 1px;
+}
+.rightBlock #login .dropdown> :last-child {
+    border-bottom: none ;
+}
+.rightBlock #login .dropdown> :first-child>a{
+font-weight: 600;
+}
+
+#categoryArticle{
+    display: flex;
+    width: 100%;
+    text-align: center;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 12px 20px;
+}
+#categoryArticle div a img{
+height: 64px;
+width: 64px;
+}
+#categoryArticle div a{
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    font-weight: 500;
+}
+#bbd a img{
+width: 100%;
+height: 280px;
+}
+#winterEssentials, #headphonesspeakers {
+    background-color: white;
+    margin: 10px;
+    
+}
+#winterEssentials header,#headphonesspeakers header{
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+    justify-content: space-between;
+    border-bottom: #efefef  solid ;
+    height: 63px;
+}
+#winterEssentials header #div1,#headphonesspeakers header #div1{
+    display: flex;
+    justify-content: flex-start;
+    font-size: 13px;
+    line-height: 32px;
+    color: #212121;
+}
+#winterEssentials header #div2 ,#headphonesspeakers header #div2 {
+    display: flex;
+     justify-content: flex-end;
+     background-color: #2874f0;
+     padding: 7px 15px;
+}
+#winterEssentials header #div2 a ,#headphonesspeakers header #div2 a{
+    text-decoration: none;
+    color: #fff;
+    font-size: small;
+    font-weight: 600;
+}
+#winterEssentials article , #headphonesspeakers article{
+    display: flex;
+    text-align: center;
+    margin: 10px 0px;
+    
+}
+#winterEssentials article img ,#topPicksOnFashion article img,#headphonesspeakers article img{
+    display: flex;
+    padding: 0px 15px;
+    justify-content: space-between;
+    height: 150px;
+    width: 150px;
+    margin: 10px 25px;
+
+}
+#winterEssentials article div,#headphonesspeakers article div{
+    /* padding: 10px; */
+    flex-basis: auto;
+    font-size: 14px;
+    
+}
+#winterEssentials article div a,#headphonesspeakers article div a{
+    text-decoration: none;
+}
+.categoryName{
+    font-weight: 500;
+    padding: 10px 0px;
+    color: black;
+}
+.offer{
+    color: #388E3C;
+    padding: 10px opx;
+}
+.muted{
+    color: #212121;
+    padding: 7px 0px 0px;
+    opacity: 0.6;
+    margin-bottom: 10px;
+
+}
+#mensFootwear, #topPicksOnFashion{
+    background-color: white;
+    margin: 10px;
+}
+#mensFootwear header,#topPicksOnFashion header{
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+    justify-content: space-between;
+    border-bottom: #efefef  solid ;
+    height: 63px;
+}
+#mensFootwear header #div1, #topPicksOnFashion header #div1{
+    display: flex;
+    justify-content: flex-start;
+    font-size: 13px;
+    line-height: 32px;
+    color: #212121;
+}
+#mensFootwear header #div2, #topPicksOnFashion header #div2{
+    display: flex;
+     justify-content: flex-end;
+     background-color: #2874f0;
+     padding: 7px 15px;
+}
+#mensFootwear header #div2 a, #topPicksOnFashion header #div2 a{
+    text-decoration: none;
+    color: #fff;
+    font-size: small;
+    font-weight: 600;
+}
+#mensFootwear article,#topPicksOnFashion article {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin: 10px 0px;
+}
+#mensFootwear article img{
+    display: flex;
+    padding: auto 15px;
+    justify-content: space-between;
+    height: 120px;
+    width: 150px;
+    margin: 10px 25px;
+    align-items: stretch;
+
+}
+#mensFootwear article div,#topPicksOnFashion article div{
+    flex-basis: auto;
+    font-size: 14px;
+    
+}
+#mensFootwear article div a,#topPicksOnFashion article div a{
+    text-decoration: none;
+}
+
+/* 2nd section */
+/* mega menu css starts here */
+#megamenublock{
+    width:100%;
+    background-color: #efff;
+    border-bottom: 1px solid #ccc;
+    height: 45px;
+    }
+    #megamenublock article{
+    width: 80%;
+    margin: 0 auto;
+    }
+    
+    #megamenublock article >nav> ul{
+    display: flex;
+    height: 45px;
+    list-style: none;
+    align-items: center;
+    justify-content:flex-start;
+    }
+    
+    #megamenublock article>nav>ul>li{
+    flex:1;
+    position: relative;
+    /* padding: 10px 0px; */
+    }
+    
+    
+    #megamenublock article>nav>ul> li>a{
+    color: #111;
+    text-decoration: none;
+    font-size: 14px;
+    text-transform: capitalize;
+    }
+    .megamenucontainer{
+    width:1200px;
+    height: 75vh;
+    background: #efff;
+    position: absolute;
+    top: 30px;
+    display: none;
+    border-bottom: 2px solid #ccc;    
+    }
+    
+    .innerMenu{
+    flex-basis: 20%;
+    padding: 20px;
+    }
+    
+    .megamenucontainer div:nth-child(even){
+    background-color: white
+    }
+    
+    .megamenucontainer div:nth-child(odd){
+    background-color: #fff;
+    }
+    
+    .innerMenu ul{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    }
+    .innerMenu ul li a{
+    /* color:#222222ab; */
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    font-size: 14px;
+    text-transform: capitalize;
+    }
+    
+    .innerMenu ul li:nth-child(1) a{
+    font-weight: bold;
+    color:#111;    
+    }    
+    #megamenublock >article>nav>ul>li:hover>.megamenucontainer{
+    display: flex;
+    
+    }
+
